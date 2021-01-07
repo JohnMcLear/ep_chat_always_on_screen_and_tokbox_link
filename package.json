@@ -13,5 +13,33 @@
   },
   "contributors": [],
   "_id": "ep_chat_always_on_screen_and_tokbox_link@0.0.1",
-  "_from": "ep_chat_always_on_screen_and_tokbox_link@"
+  "_from": "ep_chat_always_on_screen_and_tokbox_link@",
+  "devDependencies": {
+    "eslint": "^7.17.0",
+    "eslint-config-etherpad": "^1.0.21",
+    "eslint-plugin-eslint-comments": "^3.2.0",
+    "eslint-plugin-mocha": "^8.0.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prefer-arrow": "^1.2.2",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-you-dont-need-lodash-underscore": "^6.10.0"
+  },
+  "funding": {
+    "type": "individual",
+    "url": "https://etherpad.org/"
+  },
+  "peerDependencies": {
+    "ep_etherpad-lite": ">=1.8.6"
+  },
+  "eslintConfig": {
+    "root": true,
+    "extends": "etherpad/plugin"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix ."
+  },
+  "engines": {
+    "node": ">=10.13.0"
+  }
 }
